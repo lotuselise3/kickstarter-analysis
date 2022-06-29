@@ -1,5 +1,5 @@
 # Kickstarting with Excel
-- [Kickstarter_Challenge_Workbook](path/to/Kickstarter_Challenge.xlxs)
+### [Kickstarter_Challenge_Workbook.xlsx](https://github.com/lotuselise3/kickstarter-analysis/files/9012942/Kickstarter_Challenge.xlsx)
 ---
 ## Overview of Project
 - The goal of this project is to assist Louise with her project campaign specifically around theater treands. Using Excel, we are performing an analysis on the Kickstarter and manipulating the data to make it more readable and uncover any trends on previous projects in order to support Louise in her new campaign. 
@@ -17,15 +17,21 @@
 ### Analysis of Outcomes Based on Launch Date
 How Time Will Determine the Outcome?
 ... let's visualize campaign outcomes of theaters ("successful," "failed," and "canceled") based on launch date
-![Outcomes_Based_on_Launch_Date_Chart](path/to/image_name.png)
-- Campaigns launched in the Spring were more successful than those launched in the Winter. This means that the best time to start the campaign would be in May/June. In the chart below, we see that there were more than 100 campaigns in May and June that were successfully funded compared to less than 60 in November and less than 40 in December. We can only assume that people are less likely to support a campaign due to the Winter holiday season.
+
+![Outcomes_Based_on_Launch_Date_Chart](https://user-images.githubusercontent.com/68654746/176503076-cd5e5714-3ca9-46e0-81e0-361c50262ea2.png)
+- There were more than 100 campaigns in May and June that were successfully funded compared to less than 60 in November and less than 40 in December. 
+- From the chart above, campaigns launched in the Spring (May/June) were more successful than those launched in the Winter (Nov/Dec). 
 ### Analysis of Outcomes Based on Goals
 Does Setting a Reasonable Goal Make a Difference?
 ... let's visualize the percentage of successful, failed, and canceled plays based on the funding goal amount
-![Outcomes_Based_on_Goals_Chart](path/to/image_name.png)
-- Campaigns with goals less than $5000 saw an average of 74% =AVERAGE(76%,74%) success rate compared to the other ranges with an average of $5602 funded vs the average goal of $5049. The average pledged amount were 10% =(5602-5049)/5602 better than the goal. When you analyze why campaigns failed, the results showed that the average goal for failed campaigns was greater than $10554 with only an average of $559 funded. This would mean that the higher the goal, the less likely it would succeed due to campaign length of time and number of backers that would be needed.
+
+![Outcomes_Based_on_Goals_Chart](https://user-images.githubusercontent.com/68654746/176503267-ed542080-963a-4ed9-8c42-0c80d63fe767.png)
+- Campaigns with goals less than $5000 saw an average of 74% =AVERAGE(76%,74%) success rate compared to the other ranges with an average of $5602 funded vs the average goal of $5049. 
+- The average pledged amount were 10% =(5602-5049)/5602 better than the goal. When you analyze why campaigns failed, the results showed that the average goal for failed campaigns was greater than $10554 with only an average of $559 funded. This would mean that the higher the goal, the less likely it would succeed due to campaign length of time and number of backers that would be needed.
 ### Challenges and Difficulties Encountered
-In the module, I learned how to fill any missing components such as... the Percent Funded =ROUND(E2/D2*100,0), Average Donation (replacing errors with a zero) =IFERROR(ROUND(E2/L2,2),0).
+In the module, I learned how to fill any missing components such as... 
+  - the Percent Funded =ROUND(E2/D2*100,0)
+  - Average Donation (replacing errors with a zero) =IFERROR(ROUND(E2/L2,2),0)
   - Unix timestamp formula returned values, but the format did not appear as mm/dd/yyyy. Used the "date" format function in order to convert to the correct format... convert the Unix Timestamp for the launch and deadline date =(((J2/60)/60)/24)+DATE(1970,1,1)
   - When pivoting this data, I couldn't break down the date field by month in order to display the "month" only. So I had to use =TEXT(S2,"mmmm") to parse out the month from the results after the Unix Timestamp was converted.
 ---
@@ -33,7 +39,7 @@ In the module, I learned how to fill any missing components such as... the Perce
 
 ### What are two conclusions you can draw about the Outcomes based on Launch Date?
   - Drawing conclusions from the line graph, the best time with highest success rates to launch a theater campaign would be in May and/or June. 
-  - In contrary, it would not be recommended to have campaigns in the Winter months, from November-January. This might be because of the holiday season during the winter break.
+  - In contrary, it would not be recommended to have campaigns in the Winter months, from November-January, people people are less likely to support a campaign maybe because of the holiday season during the winter break.
 ### What can you conclude about the Outcomes based on Goals? 
 - From the line graph, we can draw some conclusions that campaigns with more reasonable goals are more likely to be successful. Particularly campaigns with an average goal of less than $5000 were very successful. Whereas campaigns with average goals of greater than $15000 have a much higher failure rate, with the exception around the $35000 to $45000 range. 
 ### What are some limitations of this dataset?
